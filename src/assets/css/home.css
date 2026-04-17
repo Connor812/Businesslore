@@ -1,0 +1,125 @@
+.how-to-use {
+  font-size: 18pt !important;
+}
+
+.what-we-do {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1130px) {
+  .what-we-do {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.what-we-do .card {
+  width: 100%;
+  min-width: 350px;
+}
+
+.what-we-do .card .img-container {
+  position: relative;
+  width: 100%;
+}
+
+.what-we-do .card .img-container img {
+  width: 100%;
+}
+
+.what-we-do .card .img-container h2 {
+  font-size: 1.2rem !important;
+  position: absolute;
+  width: 80%;
+  padding: 10px 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.566);
+}
+
+.what-we-do .card .img-container .icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: var(--icon-half-size);
+  left: calc(50% - calc(var(--icon-half-size) * -1));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms;
+}
+
+.what-we-do .card .img-container .icon:hover {
+  transform: rotate(15deg);
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.what-we-do .card .img-container .icon svg {
+  width: 70%;
+  height: 70%;
+  fill: var(--blue);
+}
+
+.what-we-do .card {
+  position: relative;
+}
+
+.what-we-do .card p {
+  width: 100%;
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.grant-section {
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.grant-section .grant-container {
+  border: 2px solid var(--blue);
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.grant-section .home-image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .grant-section .home-image-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .grant-section .home-image-container div {
+    width: 100% !important;
+  }
+}
+
+.grant-section .home-image-container div {
+  width: 33.33%;
+}
+
+.grant-section .chamber-of-commerce-logo {
+  width: 200px;
+}
+
+.grant-section .qr-code {
+  width: 100px;
+}
+
+

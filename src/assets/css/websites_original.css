@@ -1,0 +1,121 @@
+.websites {
+  display: flex;
+}
+
+.website-content-wrapper {
+  background-color: aqua;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.website-content {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  transition: 300ms;
+}
+
+.website-component {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.website-title {
+  color: var(--blue);
+  text-align: start;
+  margin-top: 10px;
+}
+
+.website-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1712 / 1301;
+  border-radius: 10px;
+}
+
+.website-description {
+  text-align: start;
+  flex: 1; /* Allow the description to grow */
+  margin-bottom: 10px; /* Add some space at the bottom */
+}
+
+.website-link {
+  font-size: 20pt;
+  color: var(--blue);
+  transition: 200ms;
+  align-self: flex-end; /* Push the link to the bottom */
+}
+
+.website-link svg {
+  transition: 200ms;
+}
+
+.website-link:hover svg {
+  transform: translateX(5px);
+}
+
+.arrows {
+  background: none;
+  border: none;
+}
+
+.arrows svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--blue);
+  transition: 200ms;
+}
+
+.arrows:hover svg {
+  fill: var(--dark-blue);
+}
+
+.swiper-wrapper {
+  height: 100%; /* Set to 100% to ensure the wrapper takes up the full height */
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.swiper {
+  padding: 10px;
+}
+
+.next,
+.prev {
+  height: 100%;
+  background: none;
+  border: none;
+}
+
+.next svg,
+.prev svg {
+  width: 50px;
+  height: 50px;
+  fill: var(--blue);
+  transition: 200ms;
+}
+
+.next svg:hover,
+.prev svg:hover {
+  fill: var(--dark-blue);
+}
+
+@media screen and (max-width: 526px) {
+  .next,
+  .prev {
+    display: none;
+  }
+}

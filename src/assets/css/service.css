@@ -1,0 +1,46 @@
+.service-hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  aspect-ratio: 1198 / 522;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-hero-img.tech {
+  background-image: url("http://businesslore.com/images/tech-consulting.jpg");
+}
+
+.service-hero-img.digital {
+  background-image: url("http://businesslore.com/images/digital-content.jpg");
+}
+
+.service-hero-img.brand {
+  background-image: url("http://businesslore.com/images/brand-support.jpg");
+}
+
+.service-title {
+  text-align: start;
+  margin-top: 20px;
+  color: var(--blue);
+}
+
+.service-description {
+  text-align: start;
+  margin-bottom: 25px;
+}
+
+.quote-link {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 14pt;
+  padding: 15px 35px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.quote-link:hover {
+  background-color: var(--dark-blue);
+}
